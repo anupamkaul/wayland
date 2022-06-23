@@ -1,0 +1,332 @@
+note: https://bugaevc.gitbooks.io/writing-wayland-clients/content/black-square/basic-principles-of-wayland.html
+
+
+/home/anupam/Wayland/install
+Generating targets:   0%|                                                    | 0/60 [00:00<?, ?it/s]                                                                                                    Writing build.ninja:   0%|                                                  | 0/133 [00:00<?, ?it/s]                                                                                                    The Meson build system
+Version: 0.62.2
+Source dir: /home/anupam/tmp/gfx/weston/wayland
+Build dir: /home/anupam/tmp/gfx/weston/wayland/build
+Build type: native build
+Project name: wayland
+Project version: 1.20.92
+C compiler for the host machine: ccache cc (gcc 5.4.0 "cc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609")
+C linker for the host machine: cc ld.bfd 2.26.1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Has header "sys/prctl.h" : YES 
+Has header "sys/procctl.h" : NO 
+Has header "sys/ucred.h" : NO 
+Checking for function "accept4" : YES 
+Checking for function "mkostemp" : YES 
+Checking for function "posix_fallocate" : YES 
+Checking for function "prctl" : YES 
+Checking for function "memfd_create" : NO 
+Checking for function "mremap" : YES 
+Checking for function "strndup" : YES 
+Checking whether type "struct xucred" has member "cr_pid" : NO 
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Run-time dependency libffi found: YES 3.2.1
+Header <sys/signalfd.h> has symbol "SFD_CLOEXEC" : YES 
+Header <sys/timerfd.h> has symbol "TFD_CLOEXEC" : YES 
+Header <time.h> has symbol "CLOCK_MONOTONIC" : YES 
+Checking for function "clock_gettime" : NO 
+Library rt found: YES
+Checking for function "clock_gettime" with dependency -lrt: YES 
+Configuring config.h using configuration
+Configuring wayland-version.h using configuration
+Run-time dependency expat found: YES 2.1.0
+Run-time dependency libxml-2.0 found: YES 2.9.3
+Program embed.py found: YES (/home/anupam/miniconda3py38/bin/python /home/anupam/tmp/gfx/weston/wayland/src/embed.py)
+Library m found: YES
+Run-time dependency threads found: YES
+Program nm found: YES (/usr/bin/nm)
+Program wayland-egl-symbols-check found: YES (/home/anupam/tmp/gfx/weston/wayland/egl/wayland-egl-symbols-check)
+Library dl found: YES
+Dependency threads found: YES unknown (cached)
+Dependency threads found: YES unknown (cached)
+Library dl found: YES
+C++ compiler for the host machine: ccache c++ (gcc 5.4.0 "c++ (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609")
+C++ linker for the host machine: c++ ld.bfd 2.26.1
+Program sed found: YES (/bin/sed)
+Program scanner-test.sh found: YES (/home/anupam/tmp/gfx/weston/wayland/tests/scanner-test.sh)
+Program dot found: YES (/usr/bin/dot)
+Program doxygen found: YES (/usr/bin/doxygen)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Program xmlto found: YES (/usr/bin/xmlto)
+Message: doxygen: 1.8.11
+Message: dot: dot - graphviz version 2.38.0 (20140413.2041)
+Configuring wayland.doxygen using configuration
+Program gen-doxygen.py found: YES (/home/anupam/tmp/gfx/weston/wayland/doc/doxygen/gen-doxygen.py)
+Build targets in project: 60
+NOTICE: Future-deprecated features used:
+ * 0.62.0: {'pkgconfig.generate variable for builtin directories'}
+
+wayland 1.20.92
+
+  User defined options
+    prefix: /home/anupam/Wayland/install
+
+Found ninja-1.8.2 at /home/anupam/multimedia/depot_tools/ninja
+ninja: Entering directory `build/'
+[1/108] Compiling C object src/libwayland-util.a.p/wayland-util.c.o
+[2/108] Compiling C object src/libwayland-private.a.p/connection.c.o
+[3/108] Compiling C object src/libwayland-private.a.p/wayland-os.c.o
+[4/108] Compiling C object egl/wayland-egl-abi-check.p/wayland-egl-abi-check.c.o
+[5/108] Compiling C object tests/fixed-benchmark.p/fixed-benchmark.c.o
+[6/108] Compiling C object tests/exec-fd-leak-checker.p/exec-fd-leak-checker.c.o
+[7/108] Compiling C object tests/array-test.p/array-test.c.o
+[8/108] Compiling C object tests/fixed-test.p/fixed-test.c.o
+[9/108] Compiling C object tests/list-test.p/list-test.c.o
+[10/108] Linking static target src/libwayland-util.a
+[11/108] Compiling C object tests/map-test.p/map-test.c.o
+[12/108] Linking static target src/libwayland-private.a
+[13/108] Compiling C object tests/os-wrappers-test.p/os-wrappers-test.c.o
+[14/108] Generating doc/publican/sources/ProtocolInterfaces.xml with a custom command
+[15/108] Linking target egl/wayland-egl-abi-check
+[16/108] Generating doc/publican/sources/ProtocolSpec.xml with a custom command
+[17/108] Generating doc/doxygen/xml/wayland-architecture.map with a custom command
+[18/108] Generating doc/doxygen/xml/x-architecture.map with a custom command
+[19/108] Generating doc/publican/sources/Introduction.xml with a custom command
+[20/108] Generating doc/publican/sources/Architecture.xml with a custom command
+warning: failed to load external entity "../doc/publican/images/x-architecture.map"
+warning: failed to load external entity "../doc/publican/images/wayland-architecture.map"
+[21/108] Generating doc/doxygen/xml/x-architecture.png with a custom command
+[22/108] Generating doc/doxygen/xml/wayland-architecture.png with a custom command
+[23/108] Generating doc/doxygen/xml/Client/xml-Client-doc with a custom command
+[24/108] Generating doc/doxygen/man-pages-3 with a custom command
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:504: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:513: warning: The following parameters of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:452: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:464: warning: The following parameters of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:147: warning: argument 'image' of command @param is not found in the argument list of wl_cursor_image_get_buffer(struct wl_cursor_image *_img)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:154: warning: The following parameters of wl_cursor_image_get_buffer(struct wl_cursor_image *_img) are not documented:
+  parameter '_img'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:504: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h:86: warning: The following parameters of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:452: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h:89: warning: The following parameters of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:147: warning: argument 'image' of command @param is not found in the argument list of wl_cursor_image_get_buffer(struct wl_cursor_image *_img)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h:83: warning: The following parameters of wl_cursor_image_get_buffer(struct wl_cursor_image *_img) are not documented:
+  parameter '_img'
+[25/108] Generating doc/publican/sources/ClientAPI-combined with a custom command
+[26/108] Generating doc/publican/sources/ClientAPI.xml with a custom command
+[27/108] Generating src/wayland.dtd.h with a custom command (wrapped by meson to capture output)
+[28/108] Generating doc/doxygen/html-Cursor-doc with a custom command
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:504: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:513: warning: The following parameters of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:454: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:464: warning: The following parameters of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:147: warning: argument 'image' of command @param is not found in the argument list of wl_cursor_image_get_buffer(struct wl_cursor_image *_img)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:154: warning: The following parameters of wl_cursor_image_get_buffer(struct wl_cursor_image *_img) are not documented:
+  parameter '_img'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:504: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h:86: warning: The following parameters of wl_cursor_frame(struct wl_cursor *_cursor, uint32_t time) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:454: warning: argument 'cursor' of command @param is not found in the argument list of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h:89: warning: The following parameters of wl_cursor_frame_and_duration(struct wl_cursor *_cursor, uint32_t time, uint32_t *duration) are not documented:
+  parameter '_cursor'
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.c:147: warning: argument 'image' of command @param is not found in the argument list of wl_cursor_image_get_buffer(struct wl_cursor_image *_img)
+/home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h:83: warning: The following parameters of wl_cursor_image_get_buffer(struct wl_cursor_image *_img) are not documented:
+  parameter '_img'
+[29/108] Generating doc/doxygen/xml/Server/xml-Server-doc with a custom command
+[30/108] Compiling C object src/wayland-scanner.p/scanner.c.o
+[31/108] Generating doc/publican/sources/ServerAPI-combined with a custom command
+[32/108] Linking target src/wayland-scanner
+[33/108] Generating src/protocol source with a custom command
+[34/108] Generating src/wayland_server_protocol_core_h with a custom command
+[35/108] Generating src/wayland_client_protocol_h with a custom command
+[36/108] Generating src/wayland_server_protocol_h with a custom command
+[37/108] Generating src/wayland_client_protocol_core_h with a custom command
+[38/108] Generating tests/test server protocol header with a custom command
+[39/108] Generating tests/test client protocol header with a custom command
+[40/108] Compiling C object tests/interface-test.p/interface-test.c.o
+[41/108] Compiling C object src/libwayland-server.so.0.20.92.p/meson-generated_.._wayland-protocol.c.o
+[42/108] Generating tests/test protocol source with a custom command
+[43/108] Compiling C object src/libwayland-server.so.0.20.92.p/event-loop.c.o
+[44/108] Compiling C object src/libwayland-client.so.0.20.92.p/meson-generated_.._wayland-protocol.c.o
+[45/108] Compiling C object cursor/libwayland-cursor.so.0.20.92.p/os-compatibility.c.o
+[46/108] Compiling C object egl/libwayland-egl.so.1.20.92.p/wayland-egl.c.o
+[47/108] Compiling C object cursor/libwayland-cursor.so.0.20.92.p/xcursor.c.o
+[48/108] Compiling C object tests/libtest-runner.a.p/test-helpers.c.o
+[49/108] Compiling C object tests/libtest-runner.a.p/test-runner.c.o
+../tests/test-runner.c: In function ‘is_debugger_attached’:
+../tests/test-runner.c:275:3: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+   read(pipefd[0], &buf, 1);
+   ^
+../tests/test-runner.c:298:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(pipefd[1], "-", 1);
+    ^
+../tests/test-runner.c:301:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(pipefd[1], "+", 1);
+    ^
+[50/108] Generating doc/publican/sources/ServerAPI.xml with a custom command
+[51/108] Compiling C object src/libwayland-server.so.0.20.92.p/wayland-shm.c.o
+../src/wayland-shm.c: In function ‘shm_create_pool’:
+../src/wayland-shm.c:308:6: warning: unused variable ‘seals’ [-Wunused-variable]
+  int seals;
+      ^
+../src/wayland-shm.c:307:14: warning: unused variable ‘statbuf’ [-Wunused-variable]
+  struct stat statbuf;
+              ^
+[52/108] Compiling C object src/libwayland-server.so.0.20.92.p/wayland-server.c.o
+[53/108] Compiling C object src/libwayland-client.so.0.20.92.p/wayland-client.c.o
+[54/108] Compiling C object cursor/libwayland-cursor.so.0.20.92.p/wayland-cursor.c.o
+[55/108] Compiling C++ object tests/cpp-compile-test.p/cpp-compile-test.cpp.o
+[56/108] Linking target egl/libwayland-egl.so.1.20.92
+[57/108] Compiling C object tests/display-test.p/meson-generated_.._tests-protocol.c.o
+[58/108] Compiling C object tests/libtest-runner.a.p/test-compositor.c.o
+[59/108] Compiling C object tests/connection-test.p/connection-test.c.o
+[60/108] Compiling C object tests/resources-test.p/resources-test.c.o
+[61/108] Linking static target tests/libtest-runner.a
+[62/108] Linking target src/libwayland-server.so.0.20.92
+[63/108] Linking target src/libwayland-client.so.0.20.92
+[64/108] Compiling C object tests/socket-test.p/socket-test.c.o
+[65/108] Compiling C object tests/client-test.p/client-test.c.o
+[66/108] Compiling C object tests/display-test.p/display-test.c.o
+[67/108] Compiling C object tests/queue-test.p/queue-test.c.o
+[68/108] Compiling C object tests/sanity-test.p/sanity-test.c.o
+[69/108] Compiling C object tests/newsignal-test.p/.._src_wayland-server.c.o
+[70/108] Compiling C object tests/signal-test.p/signal-test.c.o
+[71/108] Compiling C object tests/newsignal-test.p/newsignal-test.c.o
+[72/108] Compiling C object tests/message-test.p/message-test.c.o
+[73/108] Linking target tests/cpp-compile-test
+[74/108] Compiling C object tests/protocol-logger-test.p/protocol-logger-test.c.o
+[75/108] Compiling C object tests/compositor-introspection-test.p/compositor-introspection-test.c.o
+[76/108] Compiling C object tests/headers-test.p/headers-protocol-test.c.o
+[77/108] Compiling C object tests/headers-test.p/headers-test.c.o
+[78/108] Compiling C object tests/headers-test.p/headers-protocol-core-test.c.o
+[79/108] Compiling C object tests/event-loop-test.p/event-loop-test.c.o
+[80/108] Generating symbol file src/libwayland-server.so.0.20.92.p/libwayland-server.so.0.20.92.symbols
+[81/108] Generating symbol file src/libwayland-client.so.0.20.92.p/libwayland-client.so.0.20.92.symbols
+[82/108] Linking target cursor/libwayland-cursor.so.0.20.92
+[83/108] Linking target tests/array-test
+[84/108] Linking target tests/fixed-benchmark
+[85/108] Linking target tests/exec-fd-leak-checker
+[86/108] Linking target tests/client-test
+[87/108] Linking target tests/event-loop-test
+[88/108] Linking target tests/display-test
+[89/108] Linking target tests/connection-test
+[90/108] Linking target tests/list-test
+[91/108] Linking target tests/fixed-test
+[92/108] Linking target tests/map-test
+[93/108] Linking target tests/interface-test
+[94/108] Linking target tests/sanity-test
+[95/108] Linking target tests/socket-test
+[96/108] Linking target tests/queue-test
+[97/108] Linking target tests/signal-test
+[98/108] Linking target tests/newsignal-test
+[99/108] Linking target tests/resources-test
+[100/108] Linking target tests/message-test
+[101/108] Linking target tests/protocol-logger-test
+[102/108] Linking target tests/headers-test
+[103/108] Linking target tests/compositor-introspection-test
+[104/108] Generating doc/doxygen/html-Client-doc with a custom command
+[105/108] Linking target tests/os-wrappers-test
+[106/108] Generating doc/doxygen/html-Server-doc with a custom command
+[107/108] Generating doc/publican/Wayland-docbook-html with a custom command
+Writing pr01.html for preface
+Writing pr02.html for preface
+Writing ch01.html for chapter(chap-Introduction)
+Writing ch02.html for chapter(chap-Compositors)
+Writing ch03.html for chapter(chap-Wayland-Architecture)
+Writing ch04.html for chapter(chap-Protocol)
+Writing ch05.html for chapter(chap-X11-Application-Support)
+Writing apa.html for appendix(appe-Wayland-Protocol)
+Writing apb.html for appendix(sect-Library-Client)
+Error: no ID for constraint linkend: "Server-wayland-server-core_8h_1a3dfebf4109ca3ff4d66d28019a2c2602".
+Writing apc.html for appendix(sect-Library-Server)
+Writing index.html for book
+[107/108] Installing files.
+Installing src/wayland-scanner to /home/anupam/Wayland/install/bin
+Installing src/wayland-server-protocol.h to /home/anupam/Wayland/install/include
+Installing src/wayland-client-protocol.h to /home/anupam/Wayland/install/include
+Installing src/libwayland-server.so.0.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu
+Installing src/libwayland-client.so.0.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu
+Installing cursor/libwayland-cursor.so.0.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu
+Installing egl/libwayland-egl.so.1.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu
+Installing doc/doxygen/xml/wayland-architecture.png to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/images
+Installing doc/doxygen/xml/x-architecture.png to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/images
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_display.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_protocol_logger_message.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_shm_pool.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_resource.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_argument.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_list.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_proxy.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_shm_sigbus_data.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_shm_buffer.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_cursor.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_socket.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_event_source.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_event_loop.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_interface.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_client.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_cursor_image.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_resource_iterator_context.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_global.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_protocol_logger.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_message.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_object.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_array.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_listener.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_signal.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_event_queue.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/doxygen/man3/wl_cursor_theme.3 to /home/anupam/Wayland/install/share/man/man3
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/ch04.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/ch03.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/ch02.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/index.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/apc.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/apa.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/apb.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/ch01.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/pr01.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/Wayland.proc to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/ch05.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/build/doc/publican/html/pr02.html to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html
+Installing /home/anupam/tmp/gfx/weston/wayland/src/wayland-util.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/src/wayland-server.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/src/wayland-server-core.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/src/wayland-client.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/src/wayland-client-core.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/cursor/wayland-cursor.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/egl/wayland-egl.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/egl/wayland-egl-core.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/egl/wayland-egl-backend.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/build/src/wayland-version.h to /home/anupam/Wayland/install/include
+Installing /home/anupam/tmp/gfx/weston/wayland/build/meson-private/wayland-scanner.pc to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/pkgconfig
+Installing /home/anupam/tmp/gfx/weston/wayland/build/meson-private/wayland-server.pc to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/pkgconfig
+Installing /home/anupam/tmp/gfx/weston/wayland/build/meson-private/wayland-client.pc to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/pkgconfig
+Installing /home/anupam/tmp/gfx/weston/wayland/build/meson-private/wayland-cursor.pc to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/pkgconfig
+Installing /home/anupam/tmp/gfx/weston/wayland/build/meson-private/wayland-egl.pc to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/pkgconfig
+Installing /home/anupam/tmp/gfx/weston/wayland/build/meson-private/wayland-egl-backend.pc to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/pkgconfig
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/css/brand.css to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/css
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/css/common.css to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/css
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/css/default.css to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/css
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/css/epub.css to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/css
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/css/print.css to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/css
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/images/icon.svg to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/images
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/images/wayland.png to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/images
+Installing /home/anupam/tmp/gfx/weston/wayland/doc/publican/sources/images/xwayland-architecture.png to /home/anupam/Wayland/install/share/doc/wayland/Wayland/en-US/html/images
+Installing /home/anupam/tmp/gfx/weston/wayland/wayland-scanner.mk to /home/anupam/Wayland/install/share/wayland
+Installing /home/anupam/tmp/gfx/weston/wayland/protocol/wayland.xml to /home/anupam/Wayland/install/share/wayland
+Installing /home/anupam/tmp/gfx/weston/wayland/protocol/wayland.dtd to /home/anupam/Wayland/install/share/wayland
+Installing /home/anupam/tmp/gfx/weston/wayland/wayland-scanner.m4 to /home/anupam/Wayland/install/share/aclocal
+Installing symlink pointing to libwayland-server.so.0.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-server.so.0
+Installing symlink pointing to libwayland-server.so.0 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-server.so
+Installing symlink pointing to libwayland-client.so.0.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-client.so.0
+Installing symlink pointing to libwayland-client.so.0 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-client.so
+Installing symlink pointing to libwayland-cursor.so.0.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-cursor.so.0
+Installing symlink pointing to libwayland-cursor.so.0 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-cursor.so
+Installing symlink pointing to libwayland-egl.so.1.20.92 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-egl.so.1
+Installing symlink pointing to libwayland-egl.so.1 to /home/anupam/Wayland/install/lib/x86_64-linux-gnu/libwayland-egl.so
